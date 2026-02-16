@@ -17,7 +17,7 @@ import { ChatWidget } from './components/ChatWidget';
 import { MobileStickyCTA } from './components/MobileStickyCTA';
 import { PreviewBanner } from './components/PreviewBanner';
 import { COMPANY_NAME } from './constants';
-import { Hammer } from 'lucide-react';
+import { } from 'lucide-react';
 
 const Footer: React.FC = () => (
   <footer className="bg-gray-900 text-gray-400 py-12 border-t border-gray-800 pb-24 md:pb-12">

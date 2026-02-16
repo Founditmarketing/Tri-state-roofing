@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Phone, Hammer, Clock, AlertCircle } from 'lucide-react';
+import { Menu, X, Phone, Clock, AlertCircle } from 'lucide-react';
 import { NAV_ITEMS, PHONE_NUMBER } from '../constants';
 
 export const Header: React.FC = () => {
