@@ -62,7 +62,17 @@ const Footer: React.FC = () => (
       </div>
     </div>
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-sm flex flex-col md:flex-row justify-between items-center">
-      <p>© {new Date().getFullYear()} {COMPANY_NAME}. All rights reserved.</p>
+      <div className="flex flex-col md:flex-row items-center md:space-x-6">
+        <p>© {new Date().getFullYear()} {COMPANY_NAME}. All rights reserved.</p>
+        <a
+          href="https://www.bbb.org/us/il/quincy/profile/roofing-contractors/tri-state-roofing-ii-llc-0734-1000040355/#sealclick"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-2 md:mt-0 text-blue-400 hover:text-blue-300 transition-colors flex items-center"
+        >
+          <span className="mr-1">⭐</span> Accredited A+ BBB Rating
+        </a>
+      </div>
       <p className="mt-2 md:mt-0 text-gray-600">Licensed • Bonded • Insured</p>
     </div>
   </footer>

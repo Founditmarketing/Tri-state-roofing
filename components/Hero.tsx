@@ -54,10 +54,15 @@ export const Hero: React.FC = () => {
               <span className="text-sm text-gray-300">Years Experience</span>
             </div>
             <div className="w-px h-10 bg-white/20 hidden sm:block"></div>
-            <div className="flex flex-col">
-              <span className="text-3xl font-bold text-accent">A+</span>
+            <a
+              href="https://www.bbb.org/us/il/quincy/profile/roofing-contractors/tri-state-roofing-ii-llc-0734-1000040355/#sealclick"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col hover:text-accent transition-colors group"
+            >
+              <span className="text-3xl font-bold text-accent group-hover:scale-105 transition-transform">A+</span>
               <span className="text-sm text-gray-300">BBB Rating</span>
-            </div>
+            </a>
             <div className="w-px h-10 bg-white/20 hidden sm:block"></div>
             <div className="flex flex-col">
               <span className="text-3xl font-bold text-accent">500+</span>
