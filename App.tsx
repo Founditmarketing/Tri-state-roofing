@@ -68,9 +68,13 @@ const Footer: React.FC = () => (
           href="https://www.bbb.org/us/il/quincy/profile/roofing-contractors/tri-state-roofing-ii-llc-0734-1000040355/#sealclick"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-2 md:mt-0 text-blue-400 hover:text-blue-300 transition-colors flex items-center"
+          className="mt-4 md:mt-0 hover:opacity-80 transition-opacity"
         >
-          <span className="mr-1">⭐</span> Accredited A+ BBB Rating
+          <img
+            src="/BBBseal.png"
+            alt="BBB Accredited A+"
+            className="h-10 w-auto bg-white rounded-sm p-0.5"
+          />
         </a>
       </div>
       <p className="mt-2 md:mt-0 text-gray-600">Licensed • Bonded • Insured</p>

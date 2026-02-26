@@ -58,10 +58,14 @@ export const Hero: React.FC = () => {
               href="https://www.bbb.org/us/il/quincy/profile/roofing-contractors/tri-state-roofing-ii-llc-0734-1000040355/#sealclick"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col hover:text-accent transition-colors group"
+              className="flex flex-col items-center hover:opacity-80 transition-opacity group"
             >
-              <span className="text-3xl font-bold text-accent group-hover:scale-105 transition-transform">A+</span>
-              <span className="text-sm text-gray-300">BBB Rating</span>
+              <img
+                src="/BBBseal.png"
+                alt="BBB Accredited A+"
+                className="h-12 w-auto mb-1 brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all"
+              />
+              <span className="text-xs text-gray-400 uppercase tracking-widest">BBB Rating</span>
             </a>
             <div className="w-px h-10 bg-white/20 hidden sm:block"></div>
             <div className="flex flex-col">
