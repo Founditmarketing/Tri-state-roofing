@@ -17,7 +17,7 @@ import { ChatWidget } from './components/ChatWidget';
 import { MobileStickyCTA } from './components/MobileStickyCTA';
 import { PreviewBanner } from './components/PreviewBanner';
 import { COMPANY_NAME } from './constants';
-import { Facebook } from 'lucide-react';
+import { } from 'lucide-react';
 
 const Footer: React.FC = () => (
   <footer className="bg-gray-900 text-gray-400 py-12 border-t border-gray-800 pb-24 md:pb-12">
@@ -42,7 +42,9 @@ const Footer: React.FC = () => (
             className="w-8 h-8 bg-gray-700 rounded-full hover:bg-[#1877F2] transition-colors cursor-pointer flex items-center justify-center text-white"
             aria-label="Facebook"
           >
-            <Facebook size={18} fill="currentColor" />
+            <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
+              <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z" />
+            </svg>
           </a>
           <a
             href="https://www.yelp.com/biz/tri-state-roofing-ii-quincy-2"
@@ -51,8 +53,8 @@ const Footer: React.FC = () => (
             className="w-8 h-8 bg-gray-700 rounded-full hover:bg-[#FF1A1A] transition-colors cursor-pointer flex items-center justify-center text-white"
             aria-label="Yelp"
           >
-            <svg viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor">
-              <path d="M12.188 18.003L12.585 14.51C12.721 13.313 13.125 12.871 13.918 12.98L17.228 13.439C17.702 13.504 18.067 13.193 18.04 12.723L17.848 9.389C17.821 8.919 17.433 8.571 16.98 8.608L13.674 8.878C12.882 8.943 12.378 8.636 12.164 7.868L11.266 4.594C11.137 4.128 10.707 3.864 10.301 3.999L7.207 5.029C6.801 5.163 6.649 5.626 6.864 6.06L8.434 9.215C8.809 9.969 8.618 10.499 7.863 10.822L4.698 12.174C4.244 12.368 4.103 12.871 4.381 13.298L6.474 15.932C6.752 16.359 7.234 16.398 7.549 16.02L9.851 13.253C10.4 12.595 10.966 12.639 11.116 13.435L11.751 16.892C11.841 17.388 12.441 17.653 12.894 17.456L15.992 16.104" />
+            <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
+              <path d="M5.202 2.857C7.954 4.922 10.913 9.11 12 11.358c1.087-2.247 4.046-6.436 6.798-8.501C20.783 1.366 24 .213 24 3.883c0 .732-.42 6.156-.667 7.037-.856 3.061-3.978 3.842-6.755 3.37 4.854.826 6.089 3.562 3.422 6.299-5.065 5.196-7.28-1.304-7.847-2.97-.104-.305-.152-.448-.153-.327 0-.121-.05.022-.153.327-.568 1.666-2.782 8.166-7.847 2.97-2.667-2.737-1.432-5.473 3.422-6.3-2.777.473-5.899-.308-6.755-3.369C.42 10.04 0 4.615 0 3.883c0-3.67 3.217-2.517 5.202-1.026" />
             </svg>
           </a>
         </div>
