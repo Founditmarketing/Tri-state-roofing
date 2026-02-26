@@ -38,7 +38,7 @@ export const Header: React.FC = () => {
       </div>
 
       {/* Main Navigation */}
-      <div className={`transition-all duration-300 border-b border-transparent ${isScrolled ? 'bg-white shadow-lg py-2 border-gray-100' : 'bg-white/95 backdrop-blur-sm py-4 md:bg-transparent md:text-white'}`}>
+      <div className={`transition-all duration-300 border-b border-transparent ${isScrolled ? 'bg-white shadow-lg py-2 border-gray-100' : 'bg-white/95 py-4 md:bg-transparent md:text-white'}`}>
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             {/* Logo */}
