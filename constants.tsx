@@ -3,7 +3,7 @@ import { ServiceItem, NavItem, Testimonial } from './types';
 
 export const COMPANY_NAME = "Tri-State Roofing & Construction";
 export const PHONE_NUMBER = "(217) 222-1925";
-export const EMAIL_ADDRESS = "info@tristateroofingquincy.com";
+export const EMAIL_ADDRESS = "tylertristateroofing@gmail.com";
 export const ADDRESS = "2400 N 30th St, Quincy, IL 62305";
 
 export const NAV_ITEMS: NavItem[] = [

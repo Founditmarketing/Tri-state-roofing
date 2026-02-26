@@ -27,7 +27,7 @@ export default async function handler(req: Request) {
 
         const { data, error } = await resend.emails.send({
             from: 'Tri-State Roofing <notifications@tristateroofingquincy.com>',
-            to: ['info@tristateroofingquincy.com'],
+            to: ['tylertristateroofing@gmail.com'],
             subject: `New Contact Form Submission: ${service}`,
             replyTo: email,
             html: `
