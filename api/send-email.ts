@@ -27,7 +27,7 @@ export default async function handler(req: Request) {
 
         const { data, error } = await resend.emails.send({
             from: 'Tri-State Roofing <onboarding@resend.dev>', // Resend verified domain or default onboarding
-            to: ['kylan@founditmarketing.com'],
+            to: ['info@tristateroofingquincy.com'],
             subject: `New Contact Form Submission: ${service}`,
             replyTo: email,
             html: `
