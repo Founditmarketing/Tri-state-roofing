@@ -17,7 +17,7 @@ import { ChatWidget } from './components/ChatWidget';
 import { MobileStickyCTA } from './components/MobileStickyCTA';
 import { PreviewBanner } from './components/PreviewBanner';
 import { COMPANY_NAME } from './constants';
-import { } from 'lucide-react';
+import { Facebook } from 'lucide-react';
 
 const Footer: React.FC = () => (
   <footer className="bg-gray-900 text-gray-400 py-12 border-t border-gray-800 pb-24 md:pb-12">
@@ -35,10 +35,26 @@ const Footer: React.FC = () => (
           Family owned and operated since 2005.
         </p>
         <div className="flex space-x-4">
-          {/* Social Placeholders */}
-          <div className="w-8 h-8 bg-gray-700 rounded-full hover:bg-primary transition-colors cursor-pointer flex items-center justify-center text-white font-bold">f</div>
-          <div className="w-8 h-8 bg-gray-700 rounded-full hover:bg-primary transition-colors cursor-pointer flex items-center justify-center text-white font-bold">t</div>
-          <div className="w-8 h-8 bg-gray-700 rounded-full hover:bg-primary transition-colors cursor-pointer flex items-center justify-center text-white font-bold">in</div>
+          <a
+            href="https://www.facebook.com/tristateroofingii/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-8 h-8 bg-gray-700 rounded-full hover:bg-[#1877F2] transition-colors cursor-pointer flex items-center justify-center text-white"
+            aria-label="Facebook"
+          >
+            <Facebook size={18} fill="currentColor" />
+          </a>
+          <a
+            href="https://www.yelp.com/biz/tri-state-roofing-ii-quincy-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-8 h-8 bg-gray-700 rounded-full hover:bg-[#FF1A1A] transition-colors cursor-pointer flex items-center justify-center text-white"
+            aria-label="Yelp"
+          >
+            <svg viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor">
+              <path d="M12.188 18.003L12.585 14.51C12.721 13.313 13.125 12.871 13.918 12.98L17.228 13.439C17.702 13.504 18.067 13.193 18.04 12.723L17.848 9.389C17.821 8.919 17.433 8.571 16.98 8.608L13.674 8.878C12.882 8.943 12.378 8.636 12.164 7.868L11.266 4.594C11.137 4.128 10.707 3.864 10.301 3.999L7.207 5.029C6.801 5.163 6.649 5.626 6.864 6.06L8.434 9.215C8.809 9.969 8.618 10.499 7.863 10.822L4.698 12.174C4.244 12.368 4.103 12.871 4.381 13.298L6.474 15.932C6.752 16.359 7.234 16.398 7.549 16.02L9.851 13.253C10.4 12.595 10.966 12.639 11.116 13.435L11.751 16.892C11.841 17.388 12.441 17.653 12.894 17.456L15.992 16.104" />
+            </svg>
+          </a>
         </div>
       </div>
       <div>
