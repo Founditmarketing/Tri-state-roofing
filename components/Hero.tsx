@@ -22,8 +22,8 @@ export const Hero: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left pt-32 pb-16 sm:pt-20 sm:pb-0">
-        <div className="sm:max-w-3xl">
+      <div className="relative z-10 max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left pt-32 pb-16 sm:pt-20 sm:pb-0">
+        <div className="sm:max-w-5xl">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-secondary text-white mb-6 shadow-lg border border-red-500">
             <ShieldAlert className="w-4 h-4 text-white mr-2" />
             <span className="text-sm font-bold uppercase tracking-wide">Storm Damage Experts</span>

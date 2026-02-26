@@ -12,17 +12,47 @@ export const Contact: React.FC = () => {
     message: ''
   });
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form Submitted:", formData);
-    setSubmitted(true);
-    // Simulate API call
-    setTimeout(() => setSubmitted(false), 5000);
+    setIsSubmitting(true);
+    setError(null);
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        const result = await response.json();
+        throw new Error(result.error || 'Something went wrong');
+      }
+
+      setSubmitted(true);
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        service: 'Residential Roofing',
+        message: ''
+      });
+      // Simulate API call cleanup delay
+      setTimeout(() => setSubmitted(false), 5000);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to send message');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -99,6 +129,11 @@ export const Contact: React.FC = () => {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
+                {error && (
+                  <div className="p-3 bg-red-100 border border-red-400 text-red-700 rounded text-sm">
+                    {error}
+                  </div>
+                )}
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700">Full Name</label>
                   <input
@@ -167,8 +202,8 @@ export const Contact: React.FC = () => {
                     onChange={handleChange}
                   />
                 </div>
-                <Button type="submit" fullWidth variant="primary">
-                  Request Free Quote
+                <Button type="submit" fullWidth variant="primary" disabled={isSubmitting}>
+                  {isSubmitting ? 'Sending...' : 'Request Free Quote'}
                 </Button>
                 <p className="text-xs text-gray-500 text-center mt-4">
                   By submitting this form, you agree to our privacy policy.
