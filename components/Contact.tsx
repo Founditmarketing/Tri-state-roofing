@@ -82,7 +82,9 @@ export const Contact: React.FC = () => {
                 <Mail className="w-6 h-6 text-accent mt-1 mr-4" />
                 <div>
                   <p className="font-bold">Email</p>
-                  <p className="text-blue-200">{EMAIL_ADDRESS}</p>
+                  <p className="text-blue-200 text-sm">Josh Howard - management/sales</p>
+                  <p className="text-blue-200">howardtristateroofing1@gmail.com</p>
+                  <p className="text-blue-200 mt-2">{EMAIL_ADDRESS}</p>
                 </div>
               </div>
               <div className="flex items-start">
