@@ -51,11 +51,13 @@ export const SERVICES: ServiceItem[] = [
   {
     id: 'siding',
     title: 'Siding Solutions',
-    description: 'Boost curb appeal and energy efficiency with premium vinyl or fiber cement siding. Professional color matching and trim work.',
-    longDescription: 'Transform the look of your home while lowering energy bills. We install high-performance vinyl and fiber cement siding that resists fading, cracking, and hail damage.',
+    description: 'Boost curb appeal and energy efficiency with premium vinyl, fiber cement, or board and batten metal siding. Available in any color with professional trim work.',
+    longDescription: 'Transform the look of your home while lowering energy bills. We install high-performance vinyl and fiber cement siding that resists fading, cracking, and hail damage — plus heavy-duty board and batten metal siding crafted from 26-gauge steel for maximum impact resistance. Available in any color and a range of patterns and textures, including realistic wood grain and sleek matte finishes, so your home looks exactly the way you envision it.',
     benefits: [
       'Insulated siding options',
       'James Hardie Fiber Cement',
+      'Board & Batten Metal Siding — 26-gauge steel, maximum impact resistance',
+      'Available in any color — wood grain, matte & more',
       'Wide variety of colors and textures',
       'Soffit and fascia repair included'
     ],
