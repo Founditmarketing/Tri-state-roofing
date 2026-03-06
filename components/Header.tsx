@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone, Clock, AlertCircle } from 'lucide-react';
-import { NAV_ITEMS, PHONE_NUMBER, PHONE_DISPLAY } from '../constants';
+import { NAV_ITEMS, PHONE_NUMBER, PHONE_DISPLAY, PHONE_DISPLAY_SUB } from '../constants';
 
 export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,10 +72,13 @@ export const Header: React.FC = () => {
             <div className="flex items-center space-x-4">
               <a
                 href={`tel:${PHONE_NUMBER}`}
-                className={`hidden md:flex items-center space-x-2 font-bold ${isScrolled ? 'text-secondary' : 'text-white'}`}
+                className={`hidden md:flex flex-col items-center font-bold ${isScrolled ? 'text-secondary' : 'text-white'}`}
               >
-                <Phone className="h-4 w-4" />
-                <span>{PHONE_DISPLAY}</span>
+                <span className="flex items-center space-x-2">
+                  <Phone className="h-4 w-4" />
+                  <span>{PHONE_DISPLAY}</span>
+                </span>
+                <span className="text-xs font-semibold tracking-widest opacity-80">{PHONE_DISPLAY_SUB}</span>
               </a>
               <button
                 onClick={() => setIsOpen(!isOpen)}
@@ -107,7 +110,8 @@ export const Header: React.FC = () => {
                   href={`tel:${PHONE_NUMBER}`}
                   className="block w-full text-center px-3 py-3 rounded-md text-base font-medium bg-secondary text-white shadow-sm"
                 >
-                  Call {PHONE_DISPLAY}
+                  <div>Call {PHONE_DISPLAY}</div>
+                  <div className="text-xs font-semibold tracking-widest opacity-80">{PHONE_DISPLAY_SUB}</div>
                 </a>
               </div>
             </div>
