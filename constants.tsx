@@ -6,7 +6,7 @@ export const PHONE_NUMBER = "217-222-7663";
 export const PHONE_DISPLAY = "217-222-7663";
 export const PHONE_DISPLAY_SUB = "217-222-ROOF";
 export const EMAIL_ADDRESS = "tylertristateroofing@gmail.com";
-export const ADDRESS = "2400 N 30th St, Quincy, IL 62305";
+export const ADDRESS = "3411 Melody LN, Quincy, IL 62305";
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', href: '#home' },

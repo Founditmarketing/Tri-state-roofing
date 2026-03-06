@@ -107,7 +107,7 @@ export const Contact: React.FC = () => {
                 width="100%"
                 height="100%"
                 className="absolute inset-0 border-0 filter grayscale hover:grayscale-0 transition-all duration-500"
-                src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=2400%20N%2030th%20St,%20Quincy,%20IL%2062305+(Tri-State%20Roofing)&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+                src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=3411%20Melody%20LN,%20Quincy,%20IL%2062305+(Tri-State%20Roofing)&t=&z=14&ie=UTF8&iwloc=B&output=embed"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Google Map"
