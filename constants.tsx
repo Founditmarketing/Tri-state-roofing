@@ -21,11 +21,12 @@ export const SERVICES: ServiceItem[] = [
   {
     id: 'residential',
     title: 'Residential Roofing',
-    description: 'Expert installation of asphalt shingles, metal roofing, and flat roofs. We use top-tier brands like Owens Corning for lasting protection.',
-    longDescription: 'Your home is your biggest investment. Our residential roofing systems are designed to withstand Midwest storms while enhancing your home’s curb appeal. We offer a full range of architectural shingles and metal options.',
+    description: 'Expert installation of asphalt shingles, standing seam metal roofs, and flat roofs. We use top-tier brands like Owens Corning and 26-gauge steel for lasting protection.',
+    longDescription: 'Your home is your biggest investment. Our residential roofing systems are designed to withstand Midwest storms while enhancing your home’s curb appeal. We offer a full range of architectural shingles and premium metal options — including standing seam metal roofs fabricated from 26-gauge steel, available in multiple colors to complement any home style.',
     benefits: [
       'Owens Corning Preferred Contractor',
       '50-Year Material Warranty Options',
+      'Standing Seam Metal Roofs — 26-gauge steel, multiple colors',
       'Class 4 Impact Resistance Available',
       'Thorough cleanup (magnetic nail sweep)'
     ],
@@ -35,10 +36,11 @@ export const SERVICES: ServiceItem[] = [
   {
     id: 'commercial',
     title: 'Commercial Roofing',
-    description: 'Certified installers for TPO, EPDM, and modified bitumen. We keep your business running while we secure your facility.',
-    longDescription: 'We understand that commercial roofing projects need to be completed on time and on budget with minimal disruption to your operations. We specialize in flat roof systems for retail, industrial, and office buildings.',
+    description: 'Certified installers for TPO, EPDM, standing seam metal, and modified bitumen. We keep your business running while we secure your facility.',
+    longDescription: 'We understand that commercial roofing projects need to be completed on time and on budget with minimal disruption to your operations. We specialize in flat roof systems for retail, industrial, and office buildings — as well as standing seam metal roofing using heavy-duty 26-gauge steel, offering exceptional longevity and a wide selection of colors to match your brand or building aesthetic.',
     benefits: [
       'TPO, EPDM, and PVC expertise',
+      'Standing Seam Metal Roofs — 26-gauge steel, multiple colors',
       'Energy-efficient reflective coatings',
       'Preventative maintenance plans',
       '24/7 Emergency leak repair'
