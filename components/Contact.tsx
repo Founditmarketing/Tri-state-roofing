@@ -114,6 +114,11 @@ export const Contact: React.FC = () => {
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Google Map"
               ></iframe>
+              {/* Address Pin Overlay */}
+              <div className="absolute bottom-4 left-4 flex items-center gap-2 bg-white text-gray-900 rounded-lg px-3 py-2 shadow-lg text-sm font-medium pointer-events-none">
+                <MapPin className="w-4 h-4 text-red-500 flex-shrink-0" />
+                <span>{ADDRESS}</span>
+              </div>
             </div>
           </div>
 
