@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from './Button';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
-import { PHONE_NUMBER, PHONE_DISPLAY, EMAIL_ADDRESS, ADDRESS } from '../constants';
+import { PHONE_DISPLAY, EMAIL_ADDRESS, ADDRESS } from '../constants';
 
 export const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
