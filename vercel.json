@@ -2,6 +2,15 @@
   "rewrites": [
     { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
     { "source": "/robots.txt", "destination": "/robots.txt" },
+    { "source": "/locations/quincy-il", "destination": "/locations/quincy-il/index.html" },
+    { "source": "/locations/hannibal-mo", "destination": "/locations/hannibal-mo/index.html" },
+    { "source": "/locations/keokuk-ia", "destination": "/locations/keokuk-ia/index.html" },
+    { "source": "/services/residential-roofing", "destination": "/services/residential-roofing/index.html" },
+    { "source": "/services/commercial-roofing", "destination": "/services/commercial-roofing/index.html" },
+    { "source": "/services/siding", "destination": "/services/siding/index.html" },
+    { "source": "/services/windows-doors", "destination": "/services/windows-doors/index.html" },
+    { "source": "/services/gutters", "destination": "/services/gutters/index.html" },
+    { "source": "/services/decks-additions", "destination": "/services/decks-additions/index.html" },
     {
       "source": "/((?!api/.*|sitemap\\.xml|robots\\.txt|llms\\.txt).*)",
       "destination": "/index.html"
