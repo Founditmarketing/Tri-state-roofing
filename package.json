@@ -14,12 +14,15 @@
     "lucide-react": "^0.344.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.30.4",
     "resend": "^6.9.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.64",
     "@types/react-dom": "^18.2.21",
     "@vitejs/plugin-react": "^4.2.1",
+    "jsdom": "^29.1.1",
+    "tsx": "^4.22.4",
     "typescript": "^5.2.2",
     "vite": "^5.1.6"
   }

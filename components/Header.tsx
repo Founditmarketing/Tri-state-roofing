@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Menu, X, Phone, Clock, AlertCircle } from 'lucide-react';
 import { NAV_ITEMS, PHONE_NUMBER, PHONE_DISPLAY, PHONE_DISPLAY_SUB } from '../constants';
 
@@ -43,28 +44,28 @@ export const Header: React.FC = () => {
           <div className="flex justify-between items-center">
             {/* Logo */}
             <div className="flex items-center">
-              <a href="#" className="flex items-center space-x-2">
+              <Link to="/" className="flex items-center space-x-2">
                 <img
                   src="/tristatelogo.png"
                   alt="Tri-State Roofing Logo"
                   className="h-12 w-auto object-contain"
                 />
-              </a>
+              </Link>
             </div>
 
             {/* Desktop Nav */}
             <nav className="hidden md:flex space-x-8">
               {NAV_ITEMS.map((item) => (
-                <a
+                <Link
                   key={item.label}
-                  href={item.href}
+                  to={item.href}
                   className={`text-sm font-medium transition-colors ${isScrolled
                     ? 'text-gray-700 hover:text-secondary'
                     : 'text-gray-100 hover:text-white text-shadow'
                     }`}
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
             </nav>
 
@@ -95,14 +96,14 @@ export const Header: React.FC = () => {
           <div className="md:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md shadow-2xl border-b border-gray-200 animate-fade-in-down">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {NAV_ITEMS.map((item) => (
-                <a
+                <Link
                   key={item.label}
-                  href={item.href}
+                  to={item.href}
                   onClick={() => setIsOpen(false)}
                   className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-secondary hover:bg-gray-50"
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
               <div className="border-t border-gray-100 my-2 pt-2">
                 <p className="px-3 text-xs text-secondary font-bold uppercase mb-2">Emergency Service</p>

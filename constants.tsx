@@ -8,13 +8,25 @@ export const PHONE_DISPLAY_SUB = "217-222-ROOF";
 export const EMAIL_ADDRESS = "tylertristateroofing@gmail.com";
 export const ADDRESS = "3411 Melody LN, Quincy, IL 62305";
 
+// --- SEO / GEO singletons ---
+// Single source of truth for the canonical domain. Every canonical tag,
+// og:url, JSON-LD @id/url/sameAs, and the sitemap should all derive from
+// this rather than hardcoding the string a second time.
+export const SITE_URL = "https://tristateroofingquincy.com";
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/tristatelogo.png`;
+export const SOCIAL_LINKS = [
+  "https://www.facebook.com/tristateroofingii/",
+  "https://www.yelp.com/biz/tri-state-roofing-ii-quincy-2",
+  "https://www.bbb.org/us/il/quincy/profile/roofing-contractors/tri-state-roofing-ii-llc-0734-1000040355",
+];
+
 export const NAV_ITEMS: NavItem[] = [
-  { label: 'Home', href: '#home' },
-  { label: 'Services', href: '#services' },
-  { label: 'Process', href: '#process' },
-  { label: 'About Us', href: '#about' },
-  { label: 'Reviews', href: '#testimonials' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home', href: '/#home' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Process', href: '/#process' },
+  { label: 'About Us', href: '/#about' },
+  { label: 'Reviews', href: '/#testimonials' },
+  { label: 'Contact', href: '/#contact' },
 ];
 
 export const SERVICES: ServiceItem[] = [

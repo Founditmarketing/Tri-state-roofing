@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Phone, Calendar } from 'lucide-react';
 import { PHONE_NUMBER } from '../constants';
 
@@ -27,13 +28,13 @@ export const MobileStickyCTA: React.FC = () => {
           <Phone className="w-4 h-4" />
           Call Now
         </a>
-        <button 
-          onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+        <Link
+          to="/#contact"
           className="flex items-center justify-center gap-2 bg-secondary text-white font-bold py-3 rounded-lg active:bg-red-800 transition-colors shadow-sm"
         >
           <Calendar className="w-4 h-4" />
           Free Quote
-        </button>
+        </Link>
       </div>
     </div>
   );
