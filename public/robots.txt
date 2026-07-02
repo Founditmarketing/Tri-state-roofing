@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://tristateroofingquincy.com/sitemap.xml
+Sitemap: https://www.tristateroofingquincy.com/sitemap.xml
