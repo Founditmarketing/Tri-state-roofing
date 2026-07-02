@@ -21,7 +21,7 @@ const routes = [
 async function run() {
   for (const route of routes) {
     const dom = new JSDOM('<!doctype html><html><head></head><body><div id="root"></div></body></html>', {
-      url: `https://tristateroofingquincy.com${route}`,
+      url: `https://www.tristateroofingquincy.com${route}`,
       runScripts: 'outside-only',
     });
     (global as any).window = dom.window;

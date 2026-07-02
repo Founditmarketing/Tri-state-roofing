@@ -12,7 +12,7 @@ export const ADDRESS = "3411 Melody LN, Quincy, IL 62305";
 // Single source of truth for the canonical domain. Every canonical tag,
 // og:url, JSON-LD @id/url/sameAs, and the sitemap should all derive from
 // this rather than hardcoding the string a second time.
-export const SITE_URL = "https://tristateroofingquincy.com";
+export const SITE_URL = "https://www.tristateroofingquincy.com";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/tristatelogo.png`;
 export const SOCIAL_LINKS = [
   "https://www.facebook.com/tristateroofingii/",
