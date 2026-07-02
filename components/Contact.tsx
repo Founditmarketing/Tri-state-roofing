@@ -25,6 +25,18 @@ export const Contact: React.FC = () => {
     setError(null);
 
     try {
+      // Send to FoundIt CRM
+      fetch('https://www.founditos.com/api/contact-form/70d3c97e-c8c7-4728-8312-a95189832b28', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: `Service: ${formData.service}\n\n${formData.message}`,
+        }),
+      }).catch(() => {});
+
       const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: {
