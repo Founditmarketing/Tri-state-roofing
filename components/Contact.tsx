@@ -28,6 +28,7 @@ export const Contact: React.FC = () => {
       const response = await fetch('https://www.founditos.com/api/contact-form/70d3c97e-c8c7-4728-8312-a95189832b28', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
+        redirect: 'manual',
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
@@ -36,7 +37,9 @@ export const Contact: React.FC = () => {
         }),
       });
 
-      if (!response.ok) {
+      if (response.type === 'opaqueredirect' || response.ok) {
+        // CRM saves the lead then 307s to a thank-you page — both paths mean success
+      } else {
         throw new Error('Something went wrong');
       }
 
