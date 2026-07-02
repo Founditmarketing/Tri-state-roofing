@@ -25,8 +25,7 @@ export const Contact: React.FC = () => {
     setError(null);
 
     try {
-      // Send to FoundIt CRM
-      fetch('https://www.founditos.com/api/contact-form/70d3c97e-c8c7-4728-8312-a95189832b28', {
+      const response = await fetch('https://www.founditos.com/api/contact-form/70d3c97e-c8c7-4728-8312-a95189832b28', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -35,19 +34,10 @@ export const Contact: React.FC = () => {
           phone: formData.phone,
           message: `Service: ${formData.service}\n\n${formData.message}`,
         }),
-      }).catch(() => {});
-
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
       });
 
       if (!response.ok) {
-        const result = await response.json();
-        throw new Error(result.error || 'Something went wrong');
+        throw new Error('Something went wrong');
       }
 
       setSubmitted(true);
