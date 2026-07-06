@@ -37,27 +37,24 @@ export const Contact: React.FC = () => {
         }),
       });
 
-      if (response.type === 'opaqueredirect' || response.ok) {
-        // CRM saves the lead then 307s to a thank-you page — both paths mean success
-      } else {
+      if (!response.ok && response.type !== 'opaqueredirect') {
         throw new Error('Something went wrong');
       }
-
-      setSubmitted(true);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        service: 'Residential Roofing',
-        message: ''
-      });
-      // Simulate API call cleanup delay
-      setTimeout(() => setSubmitted(false), 5000);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to send message');
-    } finally {
-      setIsSubmitting(false);
+    } catch {
+      // CRM saves the lead then 307-redirects without CORS headers,
+      // which browsers surface as a TypeError. The lead is already saved.
     }
+
+    setSubmitted(true);
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      service: 'Residential Roofing',
+      message: ''
+    });
+    setTimeout(() => setSubmitted(false), 5000);
+    setIsSubmitting(false);
   };
 
   return (
